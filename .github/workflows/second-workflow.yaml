@@ -12,3 +12,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+  second-job:
+    name: mysecondjob
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+        
+      - name: Install nodejs
+        run: echo "Bye Bye"
